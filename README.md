@@ -64,8 +64,36 @@ result = spark.sql("SELECT * FROM local.schema.users")
 result.show()
 
 # Step-6: change  interpreter
-
+-----
 ## Get python interpreter path,
 ### poetry env info
 #### /workspaces/ICEBERG/iceberg_pyspark_project/.venv
 ## Change jupyter notebook kernal
+---------------------
+sudo apt-get update
+sudo apt-get install -y openjdk-17-jdk
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+
+--------------------
+
+
+import os
+
+os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-17-openjdk-amd64"
+os.environ["PATH"] = (
+    os.environ["JAVA_HOME"] + "/bin:" + os.environ["PATH"]
+)
+
+print(os.environ["JAVA_HOME"])
+
+---
+import os
+import subprocess
+
+print("JAVA_HOME:", os.environ["JAVA_HOME"])
+
+subprocess.run(["java", "-version"])
+
+--------------
