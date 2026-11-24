@@ -1,0 +1,150 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "d7d1962a-d809-49c6-bfe4-78fd552b034b",
+  "location" : "spark-warehouse/iceberg/schema/customers_6k",
+  "last-sequence-number" : 2,
+  "last-updated-ms" : 1795507214693,
+  "last-column-id" : 12,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "Index",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "Customer Id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "First Name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "Last Name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "Company",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 6,
+      "name" : "City",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 7,
+      "name" : "Country",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 8,
+      "name" : "Phone 1",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 9,
+      "name" : "Phone 2",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 10,
+      "name" : "Email",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 11,
+      "name" : "Subscription Date",
+      "required" : false,
+      "type" : "date"
+    }, {
+      "id" : 12,
+      "name" : "Website",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "codespace",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 1650662554578455283,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 1650662554578455283,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 8612146019343214001,
+    "timestamp-ms" : 1795506741072,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1795506193360",
+      "added-data-files" : "1",
+      "added-records" : "5000",
+      "added-files-size" : "349113",
+      "changed-partition-count" : "1",
+      "total-records" : "5000",
+      "total-files-size" : "349113",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "spark-warehouse/iceberg/schema/customers_6k/metadata/snap-8612146019343214001-1-0a206548-ad28-4a61-8475-75914031539e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 1650662554578455283,
+    "timestamp-ms" : 1795507214693,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1795506193360",
+      "added-data-files" : "1",
+      "added-records" : "5000",
+      "added-files-size" : "349113",
+      "changed-partition-count" : "1",
+      "total-records" : "5000",
+      "total-files-size" : "349113",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "spark-warehouse/iceberg/schema/customers_6k/metadata/snap-1650662554578455283-1-e3d2191e-0b1f-4e8e-a5a0-3325331df74a.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1795506741072,
+    "snapshot-id" : 8612146019343214001
+  }, {
+    "timestamp-ms" : 1795507214693,
+    "snapshot-id" : 1650662554578455283
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1795506741072,
+    "metadata-file" : "spark-warehouse/iceberg/schema/customers_6k/metadata/v1.metadata.json"
+  } ]
+}
